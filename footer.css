@@ -1,32 +1,25 @@
-
-
 .site-footer {
     width: 100%;
-
+    box-sizing: border-box;
     background: #11233e;
-
     color: #ffffff;
-
     text-align: center;
-
     padding: 25px 20px;
 }
-
-
 .footer-unit {
     font-size: 12px;
-
     font-weight: 600;
-
     letter-spacing: 1.5px;
-
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
-
-
+.footer-address {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #dbe5ef;
+    margin-bottom: 12px;
+}
 .footer-copy {
     font-size: 11px;
-
     color: #dbe5ef;
 }
 
@@ -38,19 +31,21 @@
 @media (max-width: 700px) {
 
     .site-footer {
-        padding:
-            20px 15px;
+        padding: 20px 15px;
     }
 
     .footer-unit {
         font-size: 9px;
-
         letter-spacing: 1px;
+        line-height: 1.6;
+    }
+
+    .footer-address {
+        font-size: 10px;
+        line-height: 1.8;
     }
 
     .footer-copy {
-        font-size: 8px;
+        font-size: 9px;
     }
-
 }
-

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -339,16 +339,13 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-
             .gallery-card {
                 height: 250px;
             }
-
             .lightbox img {
                 max-width: 95%;
                 max-height: 80vh;
             }
-
             .close-btn {
                 right: 20px;
                 top: 15px;
@@ -358,38 +355,20 @@
 </head>
 
 <body>
-
-    <!-- =========================
-         HEADER
-    ========================= -->
-
     <header>
-
         <div class="logo-area">
-
             <img src="img/logoupik.jpg" alt="UPIK PTSB Logo">
-
             <div class="logo-text">
                 <h3>UNIT PENYELIDIKAN, INOVASI DAN PENGKOMERSIALAN</h3>
             </div>
-
         </div>
-
-        <a href="gallery2026.html" class="back-btn">
+        <a href="gallery2026.php" class="back-btn">
             ← Back to Home
         </a>
-
     </header>
 
-
-    <!-- =========================
-         TITLE
-    ========================= -->
-
     <section class="gallery-header">
-
         <span>GALLERY UPIK PTSB</span>
-
         <h1>
             Pameran Sempena Hari Harta Intelek Negara 2026
         </h1>
@@ -397,196 +376,103 @@
             Koleksi gambar sepanjang Pameran Sempena Hari Harta Intelek Negara 2026:
             Accelerating Academic Writing and Publication.
         </p>
-
     </section>
-
-
-    <!-- =========================
-         IMAGE GALLERY
-    ========================= -->
 
     <section class="gallery-section">
-
         <div class="gallery-container">
-
             <div class="gallery-grid">
-
-                <!-- IMAGE 1 -->
                 <div class="gallery-card"
-                     onclick="openLightbox('gPameran1.jpeg')">
-
+                     onclick="openLightbox('img/gPameran1.jpeg')">
                     <img
-                        src="gPameran1.jpeg"
+                        src="img/gPameran1.jpeg"
                         alt="Pameran Sempena Hari Harta Intelek Negara 2026 - Image 1">
-
                     <div class="gallery-overlay">
-                        
                     </div>
-
                 </div>
 
-
-                <!-- IMAGE 2 -->
                 <div class="gallery-card"
-                     onclick="openLightbox('gPameran2.jpeg')">
-
+                     onclick="openLightbox('img/gPameran2.jpeg')">
                     <img
-                        src="gPameran2.jpeg"
+                        src="img/gPameran2.jpeg"
                         alt="Pameran Sempena Hari Harta Intelek Negara 2026 - Image 2">
-
                     <div class="gallery-overlay">
-                        
                     </div>
-
                 </div>
 
-
-                <!-- IMAGE 3 -->
                 <div class="gallery-card"
-                     onclick="openLightbox('gPameran3.jpeg')">
-
+                     onclick="openLightbox('img/gPameran3.jpeg')">
                     <img
-                        src="gPameran3.jpeg"
+                        src="img/gPameran3.jpeg"
                         alt="Pameran Sempena Hari Harta Intelek Negara 2026 - Image 3">
-
                     <div class="gallery-overlay">
-                        
                     </div>
-
                 </div>
 
-
-                <!-- IMAGE 4 -->
                 <div class="gallery-card"
-                     onclick="openLightbox('gPameran4.jpeg')">
-
+                     onclick="openLightbox('img/gPameran4.jpeg')">
                     <img
-                        src="gPameran4.jpeg"
+                        src="img/gPameran4.jpeg"
                         alt="Pameran Sempena Hari Harta Intelek Negara 2026 - Image 4">
-
                     <div class="gallery-overlay">
-                        
                     </div>
-
                 </div>
 
-
-                <!-- IMAGE 5 -->
                 <div class="gallery-card"
-                     onclick="openLightbox('gPameran5.jpeg')">
-
+                     onclick="openLightbox('img/gPameran5.jpeg')">
                     <img
-                        src="gPameran5.jpeg"
+                        src="img/gPameran5.jpeg"
                         alt="Pameran Sempena Hari Harta Intelek Negara 2026 - Image 5">
-
                     <div class="gallery-overlay">
-                        
                     </div>
-
                 </div>
 
-
-                <!-- IMAGE 6 -->
                 <div class="gallery-card"
-                     onclick="openLightbox('gPameran6.jpeg')">
-
+                     onclick="openLightbox('img/gPameran6.jpeg')">
                     <img
-                        src="gPameran6.jpeg"
+                        src="img/gPameran6.jpeg"
                         alt="Pameran Sempena Hari Harta Intelek Negara 2026 - Image 6">
-
                     <div class="gallery-overlay">
-                        
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- =========================
-         LIGHTBOX
-    ========================= -->
-
     <div class="lightbox" id="lightbox">
-
         <span class="close-btn" onclick="closeLightbox()">
             &times;
         </span>
-
         <img id="lightboxImage" src="" alt="Gallery Preview">
-
     </div>
 
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
     <footer>
-
         <p>
             © 2026 Unit Penyelidikan, Inovasi dan Pengkomersialan (UPIK)
             Politeknik Tuanku Sultanah Bahiyah
         </p>
-
     </footer>
 
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================= -->
-
     <script>
-
         function openLightbox(imageSrc) {
-
             const lightbox = document.getElementById("lightbox");
             const lightboxImage = document.getElementById("lightboxImage");
-
             lightboxImage.src = imageSrc;
-
             lightbox.classList.add("active");
-
         }
-
-
         function closeLightbox() {
-
             const lightbox = document.getElementById("lightbox");
-
             lightbox.classList.remove("active");
-
         }
-
-
-        // Close when clicking outside the image
-
         document.getElementById("lightbox").addEventListener("click", function(event) {
-
             if (event.target === this) {
-
                 closeLightbox();
-
             }
-
         });
-
         document.addEventListener("keydown", function(event) {
-
             if (event.key === "Escape") {
-
                 closeLightbox();
-
             }
-
         });
-
     </script>
-
 </body>
-
 </html>
