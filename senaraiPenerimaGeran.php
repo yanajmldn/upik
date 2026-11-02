@@ -6,7 +6,6 @@
 
     <title>Senarai Penerima Geran | UPIK PTSB</title>
     <link rel="icon" type="image/jpeg" href="img/logoupik.jpg">
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="header.css">
@@ -17,11 +16,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
-            width: 100%;
-            overflow-x: hidden;
         }
 
         body {

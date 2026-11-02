@@ -1,4 +1,3 @@
-
 <header class="site-header">
     <a class="brand" href="index.php">
         <img src="img/logoupik.jpg" alt="UPIK PTSB Logo">
@@ -6,7 +5,7 @@
     </a>
 
     <nav>
-        <a href="index.php">Home</a>
+        <a href="index.php">Home</a> 
 
         <div class="dropdown">
             <a href="index.php#research" class="dropbtn">Research ▾</a>
@@ -14,7 +13,7 @@
                 <a href="index.php#research-management">Publication</a>
                 <a href="njiea.php">NJIEA</a>
                 <a href="e-proceeding.php">E-Proceeding</a>
-                <a href="index.php#research-grant">Grantt</a>
+                <a href="index.php">Grantt</a>
                 <a href="index.php#researcher">Permohonan</a>
                 <a href="senaraiPenerimaGeran.php">Grant Active</a>
             </div>
@@ -30,7 +29,7 @@
         <div class="dropdown">
             <a href="index.php#commercial" class="dropbtn">Commersial ▾</a>
             <div class="dropdown-menu">
-                <a href="senaraiInkubator.php">Seanarai Inkubator</a>
+                <a href="senaraiInkubator.php">Senarai Inkubator</a>
             </div>
         </div>
 
@@ -44,7 +43,7 @@
                 <a href="borangPenyertaan.php">Borang Penyertaan</a>
             </div>
         </div>
-
+ 
         <div class="dropdown">
             <a href="index.php#fyp" class="dropbtn">FYP ▾</a>
             <div class="dropdown-menu">
